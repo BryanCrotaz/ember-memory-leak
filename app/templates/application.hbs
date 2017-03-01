@@ -1,0 +1,12 @@
+<div>Update number: {{updateNumber}}</div>
+
+{{#each model as |post|}}
+  <div>
+    <div>Comments</div>
+    <ul>
+      {{#each post.comments as |comment|}}
+        <li>{{comment.name}} ({{comment.id}})</li>
+      {{/each}}
+    </ul>
+  </div>
+{{/each model}}
