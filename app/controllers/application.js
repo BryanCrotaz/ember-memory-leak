@@ -1,7 +1,7 @@
 import Ember from 'ember';
 import { task, timeout } from 'ember-concurrency';
 
-const {get, set, computed} = Ember;
+const {get, computed} = Ember;
 
 export default Ember.Controller.extend({
 	intervalMs: 1000,
